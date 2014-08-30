@@ -1,0 +1,20 @@
+\newfont{\necker}{necker scaled 1800}
+\newfont{\neckerS}{necker scaled 1200}
+
+
+\renewcommand{\section}{\@startsection
+	{section}%                   % the name
+	{1}%                         % the level
+	{-10mm}%                     % the indent
+	{-0.5\baselineskip}%         % the before skip
+	{0.1\baselineskip}%          % the after skip
+	{\necker\MakeUppercase}} 	 % the style
+
+
+\renewcommand\subsection{\@startsection
+	{subsection}						% name
+	{2}									% level
+	{-10mm}								% indent
+	{\baselineskip}					% beforeskip
+	{-1.5\baselineskip}					% afterskip
+	{\neckerS\MakeUppercase}}			% style

@@ -1,0 +1,449 @@
+\documentclass[a4paper]{res}
+\usepackage{newcent}
+\usepackage{cvstyle}
+\topmargin = -0.6in  % Start text higher on the page 
+\textheight = 9.8in  % increase textheight to fit more on a page
+\headsep = 0.2in     % space between header and text
+\headheight = 12pt   % make room for header
+\oddsidemargin = -15pt
+\textwidth = 450pt
+ 
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+
+\lhead{\hspace*{-\sectionwidth}\neckerS\MakeUppercase{[Nathan Ross Powell]}} % force lhead all the way left
+\rhead{\neckerS\MakeUppercase{[Page \thepage]}}  % put page number at right
+
+\cfoot{}  % the footer is empty
+
+\pagestyle{fancy} % set pagestyle for the document
+%\pagecolor{red}
+
+% resizable fib hrule
+\newcommand{\setrule}[1]{\rule{#1}{1mm}}
+\newcommand{\fibrule}[2]{ \hspace{#1}  \setrule{#2} \setrule{21mm} \setrule{13mm} \setrule{8mm} \setrule{5mm} \setrule{3mm} \setrule{2mm}  \vspace{-.52in} }
+
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+% indent block
+\newenvironment{indentpar}[1]%
+ {\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+ }
+ {\end{list}}
+
+% subsection text
+\newenvironment{sectiondetail}[2]%
+  {    \vspace{-.2in}
+    \small{
+    #1
+    \vspace{-.2in}
+    \begin{indentpar}{5mm}
+      \begin{itshape}
+        #2
+      \end{itshape}
+    \end{indentpar}
+  }
+}
+
+
+\begin{document} 
+\thispagestyle{empty} % this page does not have a header
+\name{\necker\MakeUppercase{[Nathan Ross Powell]}}
+\address{\neckerS{[Online Gameplay Programmer - nathanrosspowelll.com - (+1)-438-402-9569]}}
+
+
+\begin{resume}
+
+%\fibrule{0.4in}{3.53in}
+%\section{[Links]} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fibrule{0.9in}{3.0in}
+\section{[Biography]} 
+
+\vspace{-.12in}
+
+\subsection{[brief]}
+\mbox{}
+\vspace{-.12in}
+
+Seven years professional experience. Well rounded generalist programmer. Proven hard worker and quick learner. Positive attitude towards work and challenges. Works best in multi-disciplinary teams making ideas and designs come to life. Five credited releases; worked on nine different projects.  
+
+\vspace{-.22in}
+
+\subsection{[goals]}
+\mbox{}
+\vspace{-.12in}
+
+I always want to be working with people who strive for perfection and to make games with technical brilliance and mass appeal. To become a better programmer and be more knowledgeable about the details of people and project management.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fibrule{2.15in}{1.75in}
+\section{[Industry experience]}
+
+\vspace{-.12in}
+
+%%%%%%
+\subsection{[Ubisoft]}  08/2012 - Present : Gameplay Programmer
+
+\vspace{-.05in}
+
+%%% WATCH_DOGS -----------------------------------------------------------------------------------------------
+{\bf Watch\_Dogs } 3rd-person vigilante hacking thriller (X360/PS3/XBONE/PS4/PC) 08/2012 - 05/2014  \\
+Member of the online game team. Responsible for the PvP game mode `Decryption Combat' and replication of other gameplay systems. I handled XRs/TRC on Xbox One and PS4 for parties and invites.
+
+\vspace{.1in}
+
+\begin{sectiondetail}{PvP Online}
+{
+I was a team member for `online game play' where I worked with designers to create various game modes and pieces of the mission system. Watch\_Dogs multi-player features join in progress, host migration and seamless transitions for the `invasion' style game play.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Parties and Invites}
+{
+I was also a team member for `online engine' programming which had me focusing on `game invites' and `party' functionality on the Xbox one and PS4.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Mentorship}
+{
+I was able to guide some online programmers from another studio in the creation of a new multiplayer experince which unfortunately for cut from the game, but it was a very rewarding experince.
+}
+\end{sectiondetail}
+
+\vspace{-.12in}
+
+%%%%%%
+\subsection{[Codemasters]}  08/2010 - 07/2012 : Game Programmer and Experienced Game Programmer (09/2011)
+
+\vspace{-.05in}
+
+%%% DIRT SHOWDOWN -----------------------------------------------------------------------------------------------
+{\bf DiRT: Showdown } Arcade racing with destruction modes (X360/PS3/PC) 09/2011 - 05/2012  \\
+Member of the game team. Appointed responsibility for game modes and key systems critical to the projects success inside of an extremely short time frame. 
+
+\vspace{.1in}
+
+\begin{sectiondetail}{Game modes and components}
+{
+Primary responsibility were the Joyride - progression and unlock based freeride gameplay; and Knockout and Transporter game modes,
+which were made to work in career, online and spectator modes.
+Tight feed back loops with design and playtest sessions to iterate gameplay.
+Lots of experience with making the best use of data driven component architectures - refactored code functionality into reusable generic components. 
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Data driven codebase}
+{
+Masses of work using and improving the game DB system. 
+Task with refactoring DB usage and making game code as data driven as possible.
+Usability wrappers classes generated from the DB schema to simplify use and improve correctness. 
+Refactored achievements implementations down to core types that are database driven with one line class creation.
+Implemented half the games achievements.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Audio speech system}
+{
+A system no-one in the team had knowledge on, or wanted to take responsibility for.
+Used proven skills with legacy code to decipher and fix bugs in a multi threaded environment.
+Updated data editing tools and leased with design and producers to add features and fix countless bugs.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Additional}
+{
+Produced high level project estimations for majority of game code.
+Designers first point of contact for build \\ stability issues - making rapid `same day' fixes.
+Mentoring and learning with  lesser experienced team members with pair programming sessions.
+}
+\end{sectiondetail}
+
+\vspace{-.1in}
+
+\pagebreak
+
+%%% INCEPTION -----------------------------------------------------------------------------------------------
+{\bf Inception } 06/2011 - 09/2011 \\
+Chosen to be on a new ideation team with the aims of moving Codemasters into new areas of the games market.
+Also focusing on new development processes and technologies.
+
+\vspace{.1in}
+
+\begin{sectiondetail}{R\&D}
+{
+Technical research on fitness for purpose on a selection of available middlewares.
+Large part of dev was done in Unity3D targeting iOS. Worked on an unannounced project until it was greenlit.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Role change}
+{
+Underwent internal design training and leadership testing (Strength.Deployment.Inventory).
+Being directly involved in the design process of new ideas, a large part of my work was rapidly prototyping UI and game mechanics to use in presentations and live demos.
+}
+\end{sectiondetail}
+
+\vspace{-.1in}
+
+%%% OPERATION FLASHPOINT -----------------------------------------------------------------------------------------------
+{\bf Operation Flashpoint: Red River } Authentic military co-op FPS (X360/PS3/PC) 08/2010 - 06/2011 \\
+Member of the gameplay team, involved with multiple scrums through out the project. Responsible for patch, DLC and Japan SKU post release.
+
+\vspace{.1in}
+
+\begin{sectiondetail}{Characters, weapons and equipment}
+{
+Main focus on the players controls of inventory, ballistics, context sensitive actions, weapon customisation, vehicle and weapon mounting.
+With tasks and bugs distributed to me I had the chance to work closely with design, physics, animation and UI teams.
+Working with a component based entity system.
+Commended by peers for task completion ahead of schedule.
+}
+\end{sectiondetail}
+
+%\pagebreak
+
+\begin{sectiondetail}{Networking \& join in progress (JIP)}
+{
+Developing a 4-player co-op main campaign.
+Extensive `hooking up' of game systems over the network.
+Experienced in syncing of static and dynamic objects states for a JIP environment.
+Refactoring to achieve a single code path in replacement of online/offline paths.
+Xbox 360 auto-launcher tool to get four machines into networked gameplay without needing to deal with any menus.
+}
+\end{sectiondetail}
+
+
+\begin{sectiondetail}{Havok}
+{
+Working with rigid body and phantom set ups and physics layers to get players and vehicles interacting with the gameplay actions.
+Using animation events to make remote networked characters perform the correct actions (vaulting, mounting etc.).
+Fixed countless physics edge cases inside an open world, tweaking bounding box sizes, adding ray casts, tweaking friction values etc.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Mission design}
+{
+Full purpose built tutorial system used with actions and triggered from mission script (Lua).
+XML definitions of tutorial strings, button presses and flow that were reusable.
+Exposing key functionality to Lua for optimal mission script flexibility and efficiency.
+Close work with mission designers and UI teams.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Prototyping}
+{
+Worked on an always synced `Actions' system to simplify coding new static and dynamic objects with an action (ammo crates, mines, etc).
+Created an in-game (3D) replication of the 2D character and weapon customisation menus and functionality.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Additional}
+{
+Strong experience debugging release crash dumps on all platforms.
+Team member picked to be part of the rapid prototyping scrum.
+Working in a fully Agile team.
+Graded `Straight A' in internal appraisals.
+}
+\end{sectiondetail}
+
+\vspace{-.2in}
+
+%%%%%%%%%%
+
+\subsection{[Eutechnyx]} 06/2007 - 07/2010 : Game Programmer 
+
+\vspace{-.05in}
+
+%%% FERRARI -----------------------------------------------------------------------------------------------
+{\bf Ferrari The Race Experience} Licensed circuit racer (PSN/WII) 03/2010 - 07/2010 \\
+Platform lead for Wii release of a remix of Ferrari Challenge and all it's DLC (previously PS3 only).
+
+\vspace{.1in}
+
+\begin{sectiondetail}{Wii}
+{
+Extensive work with upgrading to the 3.1 SDK, controller code, channel/banner tools, disk mastering and passing lotcheck. Close work with art department leads to get vehicle and track assets to fit into the memory budget. Resurrected the decrepit Bink video integration to work in the latest cross platform code.
+}
+\end{sectiondetail}
+
+\vspace{-.1in}
+
+%%% RIDE TO HELL -----------------------------------------------------------------------------------------------
+{\bf Ride To Hell} 3rd person open world action (X360/PS3/PC - Shelved) 10/2007 - 03/2010 \\
+New engine developed for Eutechnyx's first action title. Worked on a small pre-production team with varied tasks, then worked mainly with Scaleform, Havok, Audio and the build process in full production.
+
+\vspace{.1in}
+
+\begin{sectiondetail}{Engine}
+{
+Working with SIP bindings to enable gameplay code to be called from Python.
+Created custom mappings from C++ template containers to Python structures.
+Re-purposed `2D cutscene' tool to make a high performance visual OSD system.
+Scriptable menu crawling automation system for in-game UI and mission testing.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Scaleform}
+{
+Full front end flow and implementation.
+Actionscript knowledge and debugging skills.
+Worked extensively with and managed output of art assets from the Chengdu, China office.
+}
+\end{sectiondetail}
+
+\pagebreak
+
+\begin{sectiondetail}{Havok}
+{
+Lightweight `Props' object hierarchy for spawning weapons and dynamic objects in world from script and C++; 
+designed and coded all cross game code, game specific code and build process.
+Set up of locomotion animations with Behaviour tool.
+Optimisation of AI local avoidance by re-writing collision detection in Havok.
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Audio engine}
+{
+Created the build process and game interfaces to use a custom audio engine.
+Global, per-context and per-mission archive loading.
+Baked archive offsets so strings didn't have to be used outside of loading code.
+}
+\end{sectiondetail}
+
+\vspace{-.1in}
+
+%%% HOT WHEELS -----------------------------------------------------------------------------------------------
+{\bf Hot Wheels: Beat That!} Kart-like power-up'd racing (X360/PS2/Wii/PC) 06/2007 - 10/2007 \\
+First industry title, working under the only other UI programmer, then taking charge when they left.
+
+\vspace{.1in}
+
+\begin{sectiondetail}{User interface}
+{
+Working with in house tech/tools to get the front end working.
+Localisation of all platforms and SKUs - a lot of personal effort to fix strings and images for deadlines.
+Cross platform specific screen set up. 
+TCR/TRC/Lotcheck knowledge.
+Overseeing multiple SKU branch integrations during shipping.
+
+}
+\end{sectiondetail}
+
+\begin{sectiondetail}{Load/Save}
+{
+Carry over of platform check knowledge to bug fix the Load/Save code.
+Extensive work on the PS2.
+}
+\end{sectiondetail}
+
+\vspace{-.1in}
+
+
+%\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fibrule{0.5in}{3.4in}
+\section{[Skills]} 
+
+Solid experience on all consoles and also moblie experience: Xbox 360, PS3, PC, Wii, iOS, Android. \\
+Specialist areas worked in: UI, gameplay, audio, systems \& tools, physics. \\
+Console dev using: C++ \& C, Python, C\#, Lua. \\
+Tool dev using: Python, C\#, Bat/Bash, HTML/Js \\
+Highly motivated, great self-management skills and punctual in the office. \\
+Working with and co-coordinating teams; scheduling tasks, working with production and design.  \\
+Experience creating complete code designs and system architecture. \\
+Creating shared cross-platform, cross-game code and asset build processes. \\
+Component and object oriented system design. \\
+Solid debugging skills, debugging network issues, debugging crash dumps. \\
+Proficient with middleware, new codebases, undocumented and legacy code.  \\
+Database and server side technologies being used for game telemetry.\\
+Working with Agile, scrum and also more traditional production methods. \\
+Perforce, SVN, Git, Visual Studio, Vim, SQL Server, MS Access, Jira, Confluence.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fibrule{0.9in}{3.0in}
+\section{[Education]} 
+
+\vspace{-.12in}
+
+\subsection{[Northumbria University]} 09/05 - 06/10 : Full time and part time study\\
+{\bf Computer Games Software Engineering BSc} -  First Class Honours (1:1) \\
+Dissertation : ``Procedurally Generated Complex 3D Terrain with User Defined Regions'' \\
+A DirectX11 GPGPU marching cubes implementation with height map and noise inputs.
+
+\vspace{-.22in}
+
+\subsection{[Conyers College/School]} 09/98 - 05/05 : Full time study\\
+{\bf A-levels} - I.C.T, Mathematics, Physics, Business Studies \\
+{\bf GCSEs} - 11 including  Mathematics and Dual Science 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\fibrule{0.9in}{3.0in}
+\section{[Interests]} 
+
+Computer games of all genres, especially small Indie PC games.\\
+Music festival and gig goer - enjoys travelling for music. \\
+Keen snowboarder, skateboarder, longboarder - my poor knees. \\
+The sport of `Ultimate', the frisbee game. \\
+Learning to use different programming languages, Linux and open source software.\\
+Solving the types of problems as presented on Project Euler.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fibrule{1.075in}{2.825in}
+\section{[references]} 
+
+Full references for all positions are available upon request.
+
+%\begin{tabular}{@{}p{2in}p{4in}}
+%Jean-Francios Roy			& Steve Bennett\\
+%Ubisoft 				& Codemasters\\
+%CPI					& Technical Director\\
+%					& +44 (0) 1926 816 000 \\
+%					& \\
+%Brian Jobling	 			& Linda Spencer\\
+%Eutechnyx 				& Northumbria University\\
+%CEO and Owner			& Principal Lecturer and Head of Software \& Data Engineering \\
+%+44 (0) 191 460 6060 		&  +44 (0) 191 243 7384\\
+%\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
