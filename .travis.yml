@@ -1,0 +1,19 @@
+os: linux
+# we use the R VM because it contains LaTeX and pandoc
+language: r
+# we need super user privileges, so we depend on the old travis-ci infrastructure
+sudo: required
+script:
+  - pdflatex -interaction=nonstopmode cv.tex
+deploy:
+  # provider releases means GitHub Releases
+  provider: releases
+  api_key:
+  # Travis CI public key encrypted GitHub oauth key for pushing to GitHub Releases
+    secure: "A2xAYn0UUI5t9XIw4MqeLPFACBr4Is1g30g0UEQfhBFuWLcdsyph2RTd98fbxmVKgLqbrDg7s0me1iW8075jKAlfu1lCAKR8tOA0YsS/2lq2YA/Ni11IXQom5WZaFchb14yuycvpmWVy9qLXX8cPd/usVKSfMED6HcVn63emgEE="
+  # the list of files to upload
+  file: 
+    - "cv.pdf"
+  skip_cleanup: true
+  on:
+    repo: nathanrosspowell/cv
