@@ -3,6 +3,10 @@ os: linux
 language: r
 # we need super user privileges, so we depend on the old travis-ci infrastructure
 sudo: required
+# we can install additional software
+apt_packages:
+# we download pdf2djvu to also generate a djvu file of our LaTeX source
+  - pdf2djvu
 script:
   - pdflatex -interaction=nonstopmode cv.tex
 deploy:
